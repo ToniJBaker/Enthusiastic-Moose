@@ -15,10 +15,14 @@ namespace EnthusiasticMoose
             MooseSays("I really am enthusiastic");
 
             // As a question
-           CanadaQuestion();
-           EnthusiasticQuestion();
-           SecretQuestion();
-           LoveCSharpQuestion();
+        //    CanadaQuestion();
+        //    EnthusiasticQuestion();
+        //    SecretQuestion();
+        //    LoveCSharpQuestion();
+            MooseRefactor("Canada");
+            MooseRefactor("Enthusiastic");
+            MooseRefactor("Love");
+            MooseRefactor("Secret");
         }
 
         static void MooseSays(string message)
@@ -123,6 +127,25 @@ namespace EnthusiasticMoose
             else
             {
                 MooseSays("Oh, no...secrets are the best, I love to share them!");
+            }
+        }
+        static void MooseRefactor (string whichQuestion)
+        {
+            if (whichQuestion == "Canada")
+            {
+                CanadaQuestion();
+            }
+            else if (whichQuestion == "Enthusiastic")
+            {
+                EnthusiasticQuestion();
+            }
+            else if (whichQuestion == "Love")
+            {
+                LoveCSharpQuestion();
+            }
+            else if (whichQuestion == "Secret")
+            {
+                SecretQuestion();
             }
         }
     }

@@ -9,13 +9,15 @@ namespace EnthusiasticMoose
             Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine();
+            
             //Let the moose speak!
-            MooseSays();
+            MooseSays("HI, I'M  E N T H U S I A S T I C!");
+            MooseSays("I really am enthusiastic");
         }
 
-        static void MooseSays()
+        static void MooseSays(string message)
         {
-            Console.WriteLine(@"
+            Console.WriteLine($@"
                                        _.--^^^--,
                                     .'          `\
   .-^^^^^^-.                      .'              |
@@ -32,7 +34,7 @@ namespace EnthusiasticMoose
                '-'    | /       \ |
                       |  .-. .-.  |
                       \ / o| |o \ /
-                       |   / \   |    H I, I'M  E N T H U S I A S T I C !
+                       |   / \   |    {message}
                       / `^`   `^` \
                      /             \
                     | '._.'         \
